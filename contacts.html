@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="custom.css">
+
+</head>
+<body>
+	
+
+<nav class = "navbar">
+		<a href="FirstWebPage.html" ><button>Back to Home</button></a>
+		<a href="pictures.html" ><button>Pictures</button></a>
+		<a href="Newsarticle.html" ><button>News</button></a>
+		<a href="FizzBuzzGame.html" ><button>FizzBuzz</button></a>
+
+</nav>
+<form class="userpassword">
+	<p>Username<input id="Username" type="text" value=""></p>
+	<p>Email<input id="Email" type="text" value=""></p>
+	<p>Password<input id="Password" type="password" value=""></p>
+	
+</form>
+<button id="theButton">Submit</button>
+<h2 id ="Loginsuccesful"></h2>
+<h1 id = "keypress"></h1>
+<script type="text/javascript">
+	
+	document.getElementById("theButton").onclick = submit
+
+function submit(){
+	if(validateUsername()===true && validatePassword()===true){
+		document.getElementById("Loginsuccesful").innerHTML = "Login succesful, you can now check the news,watch funny pictures and videos and even see if you can figure out the game!"
+	}
+
+	function validateUsername(){
+	var error = ""
+	var user = document.getElementById("Username")
+	if (/\d/.test(user.value)){
+		return true 
+	}
+		else {
+		error = "The username does not contain a number"
+		alert(error)
+		return false;
+		}
+	}	
+}
+	function validatePassword(){
+		var pass = document.getElementById("Password")
+		if (pass.value === "12345678"){
+		return true
+	}
+		else {
+			alert("Incorrect login")
+		}	
+}
+	document.onkeypress = function(event){
+		
+		var charCode = event.keyCode
+    	var charStr = String.fromCharCode(charCode);
+		document.getElementById("keypress").innerHTML = charStr
+	}
+	
+
+</script>
+
+
+</div>	
+
+</body>
+</html>

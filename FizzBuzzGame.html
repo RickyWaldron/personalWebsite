@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FizzBuzz</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="FirstWebPage.html">
+            <button>Back to Home</button>
+        </a>
+        <a href="pictures.html">
+            <button>Pictures</button>
+        </a>
+        <a href="Newsarticle.html">
+            <button>News</button>
+        </a>
+        <a href="Contacts.html">
+            <button>Login</button>
+        </a>
+    </nav>
+    <div class="styleFizzBuzz">
+    	
+        <form>
+            <p>Type 3
+                <input id="three" type="number" value="">
+            </p>
+            <p>Type 5
+                <input id="five" type="number" value="">
+            </p>
+            <p>Type 15
+                <input id="fifteen" type="number" value="">
+            </p>
+        </form>
+        <button id="FizzBuzzButton">Submit</button>
+        <h3 id="outputFizzBuzz"></h3>
+    </div>
+    <script type="text/javascript">
+    document.getElementById("FizzBuzzButton").onclick = submitFizzBuzz
+
+    function submitFizzBuzz() {
+    	alert("Wait and see")
+        if ((document.getElementById("three").value === "3") && (document.getElementById("five").value === "5") && (document.getElementById("fifteen").value === "15")) {
+        	fizzBuzzFunction()
+        }
+    }
+
+    function fizzBuzzFunction() {
+        for (var i = 1; i < 100; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                setTimeout(function() {
+                    document.getElementById("outputFizzBuzz").innerHTML = "FizzBuzz";
+                }, 1000 * i, i)
+            } else if (i % 3 === 0) {
+                setTimeout(function() {
+                    document.getElementById("outputFizzBuzz").innerHTML = "Fizz";
+                }, 1000 * i, i)
+            } else if (i % 5 === 0) {
+                setTimeout(function() {
+                    document.getElementById("outputFizzBuzz").innerHTML = "Buzz";
+                }, 1000 * i, i)
+            } else {
+                setTimeout(function(x) {
+                    document.getElementById("outputFizzBuzz").innerHTML = x;
+                }, 1000 * i, i)
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>

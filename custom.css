@@ -1,0 +1,140 @@
+body {
+	background-color: lightblue;
+	margin: auto;
+}
+
+.Homepage {
+	background-color: lightblue;
+}
+.navbar{
+	height:50px;
+	width:100%;
+	background-color: DarkSlateGray;
+	position:fixed;
+	top:0px;
+	text-align: center;
+}
+#dummie{
+	height: 100px;
+}
+button{
+	background-color: darkblue;
+	font-size: 30px;
+	color: white;
+	margin-right:2px;
+	margin-top: 3px;
+	border-radius: 12px;
+}
+button:active{
+	color:red;
+}
+button:hover{
+	color:DarkSlateGray;
+	background-color: lightblue;
+}
+.overkoepel{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+.Pictures1{
+	display:inline-block;
+	border:solid 1px;
+	width: 250px;
+	height:300px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top:5px;
+}
+.imagewidth{
+	width: 100%;
+	height: 50%
+}
+.fototekst{
+	clear:right;
+	padding: 5px;
+	text-align: center;	
+}
+
+.clear{
+	clear: both;
+}
+.lorem{
+	margin-top:100px;
+	display:inline-block;
+	border: 2px dotted;
+	background-color: lightyellow;
+	font-family: Cambria;
+}
+.overKoepelHells{
+	width:100%;
+	margin-left:25%;
+}
+.hellsangelsfoto{
+	margin-top: 100px;
+}
+
+.tekstArticles{
+
+	display:inline-block;
+	border: 1px solid;
+	width: 50%;
+	border-box: 50px;
+	padding: 2px;
+	text-align: center;
+}
+.userpassword{
+	margin-top: 100px;
+	margin-left: 10px;
+}
+#Email{
+	margin-left: 27px;
+}
+#Password{
+	margin-left: 3px;
+}
+#Username{
+	margin-left: 2px;
+}
+#theButton{
+	font-size:20px;
+	margin:10px;
+}
+#Loginsuccesful{
+	margin-left: 25px;
+}
+#keypress{
+	margin-left: 50%;
+}
+.articleKlein{
+	float: left;
+	width: 200px;
+	height:300px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top:5px;
+}
+.hellsAngelsFotoIntro{
+	width: 100%;
+	height:60%;
+}
+a{
+	color:black;
+	text-decoration: none;
+}
+a:hover{
+	color:darkblue;
+}
+
+.artikelKlein{
+	float:left;
+	margin: 0 auto;
+	text-align: center;
+}	
+.styleFizzBuzz{
+	margin-top: 100px;
+	text-align: center;
+	width:100%;
+	display: inline-block;
+}
